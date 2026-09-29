@@ -1,0 +1,120 @@
+:root {
+  --max-blue: #4778ec;
+}
+.app-shell {
+  min-height: 100dvh;
+  padding: 0;
+  display: block;
+  background: #fff;
+}
+.messenger {
+  width: 100vw;
+  height: 100dvh;
+  min-height: 0;
+  grid-template-columns: 64px 310px minmax(0, 1fr);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.app-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 17px 0 14px;
+  border-right: 1px solid #e9edf4;
+  background: #f8f9fc;
+}
+.app-nav-brand {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #6eb5ff, #4f89ed);
+  color: #fff;
+}
+.app-nav-item {
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  color: #929bad;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.app-nav-item:hover {
+  background: #edf1f8;
+  color: #61708a;
+}
+.app-nav-item.active {
+  background: #e7efff;
+  color: #4778ec;
+}
+.app-nav-spacer {
+  flex: 1;
+}
+.messenger .sidebar {
+  grid-column: 2;
+}
+.messenger .conversation {
+  grid-column: 3;
+}
+.brand {
+  color: #30394c;
+}
+.message-area {
+  background-color: #f8f9fb;
+  background-image: radial-gradient(#e7ebf2 0.6px, transparent 0.6px);
+  background-size: 24px 24px;
+}
+.outgoing .message-bubble {
+  background: #e8f0ff;
+}
+.primary-button,
+.send-button {
+  background: linear-gradient(120deg, #5ca5ed, #4385e5);
+}
+.primary-button:hover {
+  background: linear-gradient(120deg, #4e97e2, #3274d3);
+}
+.modal-backdrop {
+  display: grid;
+}
+.messenger .sidebar {
+  min-width: 0;
+}
+@media (max-width: 850px) {
+  .messenger {
+    grid-template-columns: 58px 265px minmax(0, 1fr);
+  }
+}
+@media (max-width: 620px) {
+  .messenger {
+    display: block;
+  }
+  .app-nav {
+    display: none;
+  }
+  .messenger .sidebar {
+    grid-column: auto;
+  }
+  .messenger .conversation {
+    grid-column: auto;
+  }
+}
+:root {
+  --max-blue: #4778ec;
+}
+.status-dot.notAuthorized {
+  background: #eab450;
+  box-shadow: 0 0 0 3px #eab4501e;
+}
+.country-flag {
+  color: #6d91df;
+}

@@ -1,0 +1,115 @@
+@media (max-width: 850px) {
+  .app-shell {
+    padding: 18px;
+  }
+  .messenger {
+    width: 100%;
+    height: calc(100vh - 36px);
+    min-height: 500px;
+    grid-template-columns: 265px minmax(0, 1fr);
+  }
+  .sidebar-header {
+    padding: 0 16px;
+  }
+  .sidebar-tabs {
+    padding: 0 16px;
+    gap: 14px;
+  }
+  .tab {
+    font-size: 11px;
+  }
+  .search-box {
+    margin-left: 11px;
+    margin-right: 11px;
+  }
+  .welcome-wrap {
+    padding: 25px;
+  }
+  .welcome-card h1 {
+    font-size: 27px;
+  }
+  .start-form {
+    flex-direction: column;
+    width: min(320px, 100%);
+  }
+  .start-form .primary-button {
+    width: 100%;
+  }
+}
+@media (max-width: 620px) {
+  .app-shell {
+    padding: 0;
+    background: #fff;
+  }
+  .messenger {
+    height: 100dvh;
+    min-height: 0;
+    border: 0;
+    border-radius: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .sidebar,
+  .conversation {
+    position: absolute;
+    inset: 0;
+    transition: transform 0.25s ease;
+  }
+  .sidebar {
+    z-index: 1;
+    border-right: 0;
+  }
+  .conversation {
+    z-index: 2;
+    transform: translateX(100%);
+  }
+  .show-chat .conversation {
+    transform: translateX(0);
+  }
+  .show-chat .sidebar {
+    transform: translateX(-25%);
+  }
+  .back-button {
+    display: inline-grid;
+    margin-left: -10px;
+  }
+  .conversation-header {
+    height: 67px;
+    padding: 0 14px;
+  }
+  .welcome-wrap {
+    padding: 24px;
+  }
+  .welcome-art {
+    transform: scale(0.9);
+    margin-bottom: 1px;
+  }
+  .welcome-card h1 {
+    font-size: 28px;
+  }
+  .welcome-card > p {
+    font-size: 11px;
+  }
+  .start-form {
+    margin-top: 22px;
+  }
+  .message-area {
+    padding: 20px 17px;
+  }
+  .composer-wrap {
+    padding: 10px 12px 12px;
+  }
+  .composer-hint {
+    font-size: 8px;
+  }
+  .build-tag {
+    display: none;
+  }
+  .modal {
+    padding: 25px 22px 21px;
+  }
+  .welcome-footnote {
+    margin-top: 16px;
+  }
+}
